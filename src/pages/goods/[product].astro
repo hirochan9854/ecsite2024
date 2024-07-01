@@ -15,7 +15,41 @@ const goodsData = goods.find(({url}) => product === url);
 ---
 
 <Layout>
-<p>{goodsData.name}</p>
-<p>{goodsData.price}</p>
-<img src=`/images/${goodsData.itemphotos[0]}`>
+  <main class="mt-24  flex items-center justify-center">
+
+    <div class="w-2/4 mr-5">
+      <div>
+        <img alt={goodsData.name} id="mainImage" class="w-full h-auto" />
+      </div>
+      <div class="grid grid-cols-3 gap-2 mt-2">
+        {goodsData.itemphotos.map((photo) => (
+          <img src={`/images/${photo}`} alt={goodsData.name} class="w-full h-auto images" />
+        ))}
+    </div>
+  </div>
+    <div class="w-1/4 ml-5 text-left">
+        <h2 class="font-medium text-3xl mb-4">{goodsData.name}</h2>
+        <p class="mt-2">{goodsData.text}</p>
+      <div class="flex items-center">
+        <p class="font-bold">{goodsData.price}円</p>
+          {goodsData.state === false && <p class="bg-red-500 text-white text-xs leading-none p-1 ">SOLD OUT</p>}
+      </div>
+    </div>
+  </main>
 </Layout>
+<script>
+const images=document.querySelectorAll('.images');
+const mainImage=document.querySelector('#mainImage');
+
+images.forEach((image) => {
+  image.addEventListener('click', () => {
+    images.forEach((image) => {
+      image.style="border: none";
+    });
+    mainImage.setAttribute('src', image.getAttribute('src'));
+    image.style="border: 2px solid #333";
+  });
+});
+
+mainImage.setAttribute('src', images[0].getAttribute('src'));
+</script>
