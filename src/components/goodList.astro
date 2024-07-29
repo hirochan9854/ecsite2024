@@ -3,7 +3,7 @@ import goods from "../data/goods.json";
 import Card from "./Card.astro";
 ---
 
-<ul class="grid grid-cols-2 gap-5 md:grid-cols-4">
+<ul class="grid grid-cols-2 gap-5 md:grid-cols-3 ">
   {goods.map((item) => (
     <Card item={item} />
   ))}

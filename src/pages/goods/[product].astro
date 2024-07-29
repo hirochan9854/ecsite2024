@@ -1,55 +1,64 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-
 import goods from "../../data/goods.json";
-export const getStaticPaths = async() => {
-  return goods.map(({ url }) => {
-    return {
-      params: { product : url },
-    }
-  });
-};
-const { product } = Astro.params;
-const goodsData = goods.find(({url}) => product === url);
 
+export const getStaticPaths = async () => {
+  return goods.map(({ url }) => ({
+    params: { product: url },
+  }));
+};
+
+const { product } = Astro.params;
+const goodsData = goods.find(({ url }) => product === url);
 ---
 
 <Layout>
-  <main class="mt-24  flex items-center justify-center">
-
-    <div class="w-2/4 mr-5">
+  <main class=" sm:flex items-center justify-center mt-44 w-11/12 mx-auto">
+    <div class="sm:w-2/4 sm:mr-5">
       <div>
-        <img alt={goodsData.name} id="mainImage" class="w-full h-auto" />
+        <img
+          alt={goodsData.name}
+          id="mainImage"
+          src={`/03_ecsite/images/${goodsData.itemphotos[0]}`}
+          class=" max-h-96 mx-auto"
+        />
       </div>
-      <div class="grid grid-cols-3 gap-2 mt-2">
+      <div class="grid grid-cols-4 gap-2 mt-2">
         {goodsData.itemphotos.map((photo) => (
-          <img src={`/images/${photo}`} alt={goodsData.name} class="w-full h-auto images" />
+          <img
+            src={`/03_ecsite/images/${photo}`}
+            alt={goodsData.name}
+            class="max-h-28 images cursor-pointer"
+          />
         ))}
-    </div>
-  </div>
-    <div class="w-1/4 ml-5 text-left">
-        <h2 class="font-medium text-3xl mb-4">{goodsData.name}</h2>
-        <p class="mt-2">{goodsData.text}</p>
-      <div class="flex items-center">
-        <p class="font-bold">{goodsData.price}円</p>
-          {goodsData.state === false && <p class="bg-red-500 text-white text-xs leading-none p-1 ">SOLD OUT</p>}
       </div>
+    </div>
+    <div class="sm:w-1/4 sm:ml-5 text-left ">
+      <h2 class="font-medium text-3xl mb-4">{goodsData.name}</h2>
+      {goodsData.memberOnly === true && (
+        <p class="bg-pink-400 text-white text-sm inline  py-1 px-3 rounded-md">会員限定</p>
+      )}
+      <p class="mt-2">{goodsData.text}</p>
+      <p class="font-bold text-xl mt-3">¥{goodsData.price}</p>
     </div>
   </main>
 </Layout>
-<script>
-const images=document.querySelectorAll('.images');
-const mainImage=document.querySelector('#mainImage');
 
-images.forEach((image) => {
-  image.addEventListener('click', () => {
+<script type="module">
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.images');
+    const mainImage = document.querySelector('#mainImage');
+
+    if (images.length > 0) {
+      images[0].style.border = "1px solid #333";
+    }
+
     images.forEach((image) => {
-      image.style="border: none";
+      image.addEventListener('click', () => {
+        images.forEach((img) => img.style.border = "none");
+        mainImage.src = image.src;
+        image.style.border = "1px solid #333";
+      });
     });
-    mainImage.setAttribute('src', image.getAttribute('src'));
-    image.style="border: 2px solid #333";
   });
-});
-
-mainImage.setAttribute('src', images[0].getAttribute('src'));
 </script>

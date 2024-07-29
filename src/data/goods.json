@@ -1,137 +1,62 @@
 [
   {
-    "itemphotos": [
-      "umaibo01.jpg",
-      "umaibo02.jpg",
-      "umaibo02.jpg",
-      "umaibo02.jpg"
-    ],
-    "name": "うまい棒サラミ味",
-    "price": 12,
+    "itemphotos": ["bag1.png", "bag2.png"],
+    "name": "City peel トートバッグ",
+    "price": 2000,
     "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "memberOnly": true,
+    "text": "9th Album「Ninth Peel」に収録されている楽曲「City peel」をモチーフにデザインされたトートバッグ。UNICITY Ver.",
     "id": 27002,
-    "colors": "黄",
-    "maker": "（株）やおきん",
-    "url": "umaibo"
+    "url": "bag"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["planetShirt1.png", "planetShirt2.png", "planetShirt3.png"],
+    "name": "3人の惑星Tシャツ ブラック",
+    "price": 3500,
+    "state": true,
+    "memberOnly": false,
+    "text": "メンバーモチーフイラストTシャツ。",
+    "id": 27002,
+    "url": "tshirt"
+  },
+  {
+    "itemphotos": ["tinBadge1.png", "tinBadge2.png", "tinBadge3.png"],
+    "name": "Ninth Peel 缶バッジ",
+    "price": 600,
     "state": false,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
-    "id": 4971749110335,
-    "colors": "赤",
-    "maker": "（株）菓道",
-    "url": "kabayakisan"
-  },
-  {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
-    "name": "うまい棒サラミ味",
-    "price": 12,
-    "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "memberOnly": false,
+    "text": "9th Album「Ninth Peel」早期予約特典缶バッジ。",
     "id": 27002,
-    "colors": "黄",
-    "maker": "（株）やおきん",
-    "url": "umaibo"
+    "url": "tshirt"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["ninthPeel-Band1.png", "ninthPeel-Band2.png"],
+    "name": " Ninth Peel nextラバーバンド",
+    "price": 500,
     "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
-    "id": 4971749110335,
-    "colors": "赤",
-    "maker": "（株）菓道",
-    "url": "kabayakisan"
-  },
-  {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
-    "name": "うまい棒サラミ味",
-    "price": 12,
-    "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "memberOnly": false,
+    "text": "TOUR 2023 ”Ninth Peel” next ロゴモチーフラバーバンド。",
     "id": 27002,
-    "colors": "黄",
-    "maker": "（株）やおきん",
-    "url": "umaibo"
+    "url": "band"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["towel.png"],
+    "name": "絵の具 at UNICITY タオル",
+    "price": 3500,
     "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
-    "id": 4971749110335,
-    "colors": "赤",
-    "maker": "（株）菓道",
-    "url": "kabayakisan"
-  },
-  {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
-    "name": "うまい棒サラミ味",
-    "price": 12,
-    "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "memberOnly": true,
+    "text": "少し大き目のスポーツタオルサイズです。",
     "id": 27002,
-    "colors": "黄",
-    "maker": "（株）やおきん",
-    "url": "umaibo"
+    "url": "towel"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["Parker1.jpg", "Parker2.jpg"],
+    "name": "絵の具 at UNICITY パーカー",
+    "price": 3500,
     "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
-    "id": 4971749110335,
-    "colors": "赤",
-    "maker": "（株）菓道",
-    "url": "kabayakisan"
-  },
-  {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
-    "name": "うまい棒サラミ味",
-    "price": 12,
-    "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "memberOnly": true,
+    "text": "プルオーバータイプの裏パイルパーカー。",
     "id": 27002,
-    "colors": "黄",
-    "maker": "（株）やおきん",
-    "url": "umaibo"
-  },
-  {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
-    "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
-    "id": 4971749110335,
-    "colors": "赤",
-    "maker": "（株）菓道",
-    "url": "kabayakisan"
+    "url": "Parker"
   }
 ]
